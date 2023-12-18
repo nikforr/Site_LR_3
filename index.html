@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації з Google Maps</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 25%;
+            margin: 20px 5; /* Змінив margin auto на margin 20px 0 */
+            margin-left: -5px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        #map-container {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .social-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .page-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-link {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="social-buttons">
+    <a href="https://www.facebook.com/" class="social-button" target="_blank">Facebook</a>
+    <a href="https://twitter.com/" class="social-button" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/" class="social-button" target="_blank">Instagram</a>
+</div>
+
+<h2>Форма реєстрації</h2>
+
+<form action="#" method="post">
+    <table>
+        <tr>
+            <td><label for="name">Ім'я:</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="nickname">Прізвище:</label></td>
+            <td><input type="text" id="nickname" name="nickname" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Пароль:</label></td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td><label>Стать:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Чоловіча</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Жіноча</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="dob">Дата народження:</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+    </table>
+
+    <p>Виберіть мови програмування:</p>
+    <input type="checkbox" id="java" name="language" value="java">
+    <label for="java">Java</label><br>
+    <input type="checkbox" id="python" name="language" value="python">
+    <label for="python">Python</label><br>
+    <input type="checkbox" id="javascript" name="language" value="javascript">
+    <label for="javascript">JavaScript</label><br>
+    <input type="checkbox" id="csharp" name="language" value="csharp">
+    <label for="csharp">C#</label><br>
+    <input type="checkbox" id="php" name="language" value="php">
+    <label for="php">PHP</label><br>
+
+    <label for="comment">Коментар:</label><br>
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+
+    <input type="submit" value="Надіслати">
+</form>
+
+<div class="page-links">
+    <a href="page1.html" class="page-link">Музичний файл</a>
+    <a href="page2.html" class="page-link">Google Map</a>
+    <a href="page3.html" class="page-link">Відео</a>
+</div>
+</div>
+
+</body>
+</html>
